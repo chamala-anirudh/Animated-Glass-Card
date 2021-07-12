@@ -12,7 +12,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.7;
   font-size: 1.6rem;
   text-shadow: 0 1rem 1.9rem rgba(0, 0, 0, 0.7);
@@ -34,7 +34,8 @@ h1 {
   opacity: 0.8;
 }
 
-h2, p {
+h2,
+p {
   color: #658ec6;
   font-weight: 500;
   opacity: 0.8;
@@ -50,17 +51,26 @@ h3 {
   background: #fff;
   min-height: 80vh;
   width: 60%;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
   border-radius: 3rem;
   z-index: 3;
   backdrop-filter: blur(1.5rem);
   display: flex;
 }
 
-.circle1, 
+.circle1,
 .circle2 {
   background-color: #fff;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3)) no-repeat;
+  background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    )
+    no-repeat;
   height: 25rem;
   width: 25rem;
   position: absolute;
@@ -71,6 +81,9 @@ h3 {
 .circle1 {
   top: 5%;
   left: 72%;
+  /* -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s; */
   transition-duration: 2s;
   transition-property: background;
   animation: moveCircle-1 10s infinite;
@@ -95,7 +108,11 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
 }
@@ -115,12 +132,20 @@ h3 {
 .link:hover {
   border-radius: 10rem;
   cursor: pointer;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(197, 197, 197, 0.3));
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(197, 197, 197, 0.3)
+  );
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
 
 .link:active {
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(197, 197, 197, 0.3));
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(197, 197, 197, 0.3)
+  );
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 
@@ -150,7 +175,6 @@ h3 {
   font-weight: 600;
 }
 
-
 /* Games */
 
 .games {
@@ -165,7 +189,11 @@ h3 {
 }
 
 .status input {
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
   border: none;
   border-radius: 2rem;
   width: 50%;
@@ -174,7 +202,11 @@ h3 {
 
 .card {
   display: flex;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1));
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 1)
+  );
   padding: 2.4rem;
   border-radius: 1.6rem;
   justify-content: space-between;
@@ -252,7 +284,7 @@ h3 {
   }
 
   75% {
-    transform: translateX(0) translateY(58rem)  rotate(-360deg);
+    transform: translateX(0) translateY(58rem) rotate(-360deg);
     border-radius: 0%;
   }
 
